@@ -4,11 +4,11 @@
       <h1 class="header">Find your Fire Extinguisher</h1>
       <p class="snippet">
         hello this is just a test text to showing some text, it hfgds hafg
-        jkgfaj dgfnbs jdhsfa
+        jkgfaj dgfnbs jdhsfa jhdsf jhdsf jhdsf jhdsf jhdsf jhdsf jhdsf jhdsf
       </p>
       <button class="button btn">Looking start</button>
     </div>
-    <img src="../assets/svg/fire-est.svg" alt="" class="image">
+    <img src="../assets/svg/fire-est.svg" alt="fire extinguisher" class="image" />
   </div>
 </template>
 
