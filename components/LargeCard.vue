@@ -1,6 +1,10 @@
 <template>
   <div class="card">
-    <img src="" alt="" class="image" />
+    <img
+      :src="require(`../assets/images/${card.image || `fel-png`}`)"
+      alt=""
+      class="image"
+    />
     <h3 class="header">{{ card.title }}</h3>
     <p class="snippet">{{ card.snippet }}</p>
   </div>
