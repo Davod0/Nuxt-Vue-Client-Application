@@ -1,19 +1,27 @@
 <template>
   <div>
     <div class="container">
-      <h4 class="header">Top-rated fire Extinguisher in Sweden</h4>
+      <h4 class="header">{{ cardsSection.title }}</h4>
       <p class="snippet">
-        These are the best fire extinguishers in Sweden. They are highly rated
-        by users and have been tested by experts. They are also affordable and
-        easy to use.
+        {{ cardsSection.snippet }}
       </p>
-      <div class="cards-container"></div>
+      <div class="cards-container">
+        <LargeCard
+          v-for="card in cardsSection.cards"
+          :key="card.id"
+          :card="card"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import LargeCard from "./LargeCard.vue";
+
+export default {
+  props: ["cardsSection"],
+};
 </script>
 
 <style scoped>

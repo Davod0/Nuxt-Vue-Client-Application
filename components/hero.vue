@@ -8,7 +8,11 @@
       </p>
       <button class="button btn">Looking start</button>
     </div>
-    <img src="../assets/svg/fire-est.svg" alt="fire extinguisher" class="image" />
+    <img
+      src="../assets/svg/fire-est.svg"
+      alt="fire extinguisher"
+      class="image"
+    />
   </div>
 </template>
 
