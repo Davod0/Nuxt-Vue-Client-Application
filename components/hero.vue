@@ -1,14 +1,15 @@
 <template>
     <div class="Hero container">
           <h1 class="header">Find your Fire Extinguisher</h1>
-          <p class="snippet">hello this is just a test text to showing some text and that´s it hfgds hafg jkgfaj dgfnbs jdhsfa </p>
-          <button class="button">Looking start</button>
+          <p class="snippet">hello this is just a test text to showing some text, it hfgds hafg jkgfaj dgfnbs jdhsfa </p>
+          <button class="button btn">Looking start</button>
+          
     </div>
 </template>
 
 <script>
     export default {
-        
+
     }
 </script>
 

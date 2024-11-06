@@ -1,11 +1,10 @@
 <template>
-      <p>
-        hELLOR WORLD
-        xxx
-      </p>
+      <Hero />
 </template>
 
 <script>
+import Hero from './hero.vue';
+
 export default {
   name: 'NuxtTutorial'
 }
