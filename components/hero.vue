@@ -3,8 +3,8 @@
     <div class="text-container">
       <h1 class="header">Find your Fire Extinguisher</h1>
       <p class="snippet">
-        hello this is just a test text to showing some text, it hfgds hafg
-        jkgfaj dgfnbs jdhsfa jhdsf jhdsf jhdsf jhdsf jhdsf jhdsf jhdsf jhdsf
+        Hello this is just a test text !! Hello this is just a test text !!
+        Hello this is just a test text !!
       </p>
       <button class="button btn">Looking start</button>
     </div>
