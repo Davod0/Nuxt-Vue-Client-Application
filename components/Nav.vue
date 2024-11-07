@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
-    <NuxtLink class="navbar-brand" to="/">Hello</NuxtLink>
+    <NuxtLink class="navbar-brand" to="/">Firengii</NuxtLink>
     <button
       class="navbar-toggler"
       type="button"

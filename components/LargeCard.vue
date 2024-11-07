@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <NuxtLin :to="`/products/${card.id}`" class="card">
     <img
       :src="require(`../assets/images/${card.image || `fel-png`}`)"
       alt=""
@@ -7,7 +7,7 @@
     />
     <h3 class="header">{{ card.title }}</h3>
     <p class="snippet">{{ card.snippet }}</p>
-  </div>
+  </NuxtLin>
 </template>
 
 <script>
