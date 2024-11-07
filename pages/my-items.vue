@@ -1,15 +1,19 @@
 <template>
-    <div>
-        This my-items page
-    </div>
+  <div class="container">
+      Items page
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+import { mapState } from 'vuex';
+
+  export default {
+      layout: "no-nav",
+  }
 </script>
 
 <style scoped>
-
+  .container {
+      padding: 5rem 0
+  }
 </style>
