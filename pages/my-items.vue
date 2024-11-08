@@ -5,10 +5,9 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
 
   export default {
-      layout: "no-nav",
+      layout: "no-nav"
   }
 </script>
 

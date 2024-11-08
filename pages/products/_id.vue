@@ -10,6 +10,7 @@
         <div class="info-box">
           <h1>{{ product.title }}</h1>
           <p class="snippet">{{ product.snippet }}</p>
+            <RentModal />
         </div>
       </div>
       <div class="whats-included-container">
@@ -49,13 +50,16 @@
       </div>
       <Reviews />
     </div>
-    <div v-else class="container padding">Page Not Found</div>
+    <div v-else class="container padding">
+      <PageNotFound />
+    </div>
   </div>
 </template>
 
 <script>
 import { mapState } from "vuex";
 import { getters } from "../../store";
+import PageNotFound from "../../components/PageNotFound.vue";
 export default {
   computed: {
     product() {
