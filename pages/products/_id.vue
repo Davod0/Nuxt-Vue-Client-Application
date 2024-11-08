@@ -10,7 +10,9 @@
         <div class="info-box">
           <h1>{{ product.title }}</h1>
           <p class="snippet">{{ product.snippet }}</p>
-            <RentModal />
+            <RentModal
+              :product="product"
+             />
         </div>
       </div>
       <div class="whats-included-container">
@@ -57,7 +59,6 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 import { getters } from "../../store";
 import PageNotFound from "../../components/PageNotFound.vue";
 export default {
