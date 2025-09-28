@@ -10,39 +10,19 @@
         <div class="info-box">
           <h1>{{ product.title }}</h1>
           <p class="snippet">{{ product.snippet }}</p>
-            <RentModal
-              :product="product"
-             />
+          <RentModal
+            :product="product"
+          />
         </div>
       </div>
       <div class="whats-included-container">
-        <div class="included-container">
-          <h6>Super Effective</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            dolorem.
-          </p>
-        </div>
-        <div class="included-container">
-          <h6>Clean & Tidy</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            dolorem.
-          </p>
-        </div>
-        <div class="included-container">
-          <h6>Cancel Anytime</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            dolorem.
-          </p>
-        </div>
-        <div class="included-container">
-          <h6>Satisfaction Guaranteed</h6>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            dolorem.
-          </p>
+        <div
+          class="included-container"
+          v-for="(attr, index) in product.attributes"
+          :key="index"
+        >
+          <h6>{{ attr.title }}</h6>
+          <p>{{ attr.description }}</p>
         </div>
       </div>
       <div class="description-container">
@@ -59,8 +39,8 @@
 </template>
 
 <script>
-import { getters } from "../../store";
 import PageNotFound from "../../components/PageNotFound.vue";
+
 export default {
   computed: {
     product() {
@@ -123,9 +103,6 @@ p {
 button {
   width: 100%;
   border: none;
-  padding: 0.5rem;
-  color: white;
-  font-weight: 700;
   padding: 1rem 4rem;
   border-radius: 100rem;
   background-color: rgb(231, 81, 43);
