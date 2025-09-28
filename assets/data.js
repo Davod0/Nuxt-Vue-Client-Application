@@ -1,7 +1,7 @@
 export const largeCardSections = [
   {
     id: 1,
-    title: "Top-rated Fire Extinguisher in Niagara",
+    title: "Top-rated Fire Extinguisher in Sweden",
     snippet:
       "User say these are the best fire extinguishers to rent if your house is burning down.",
     cards: [
@@ -62,7 +62,7 @@ export const largeCardSections = [
 export const smallCardSections = [
   {
     id: 1,
-    title: "Fire Extinguisher in Toronto",
+    title: "Fire Extinguisher in Stockholm",
     cards: [
       {
         id: 1,
@@ -116,7 +116,7 @@ export const smallCardSections = [
   },
   {
     id: 2,
-    title: "Fire Extinguisher in Niagara",
+    title: "Fire Extinguishers Available Across Sweden",
     cards: [
       {
         id: 13,
