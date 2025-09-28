@@ -2,11 +2,7 @@
   <div class="Hero container">
     <div class="text-container">
       <h1 class="header">Find your Fire Extinguisher</h1>
-      <p class="snippet">
-        Hello this is just a test text !! Hello this is just a test text !!
-        Hello this is just a test text !!
-      </p>
-      <button class="button btn">Looking start</button>
+      <button class="button btn">Start Exploring</button>
     </div>
     <img
       src="../assets/svg/fire-est.svg"
@@ -38,6 +34,7 @@ export default {};
 .header {
   font-weight: 900;
   font-size: 5rem;
+  margin-bottom: 4rem;
 }
 
 .snippet {
