@@ -75,7 +75,9 @@ export default {
 }
 
 .button:hover {
-  width: 21.5rem;
+  width: 23rem;
+  background-color: rgb(255, 95, 57);
+  box-shadow: 0 4px 16px rgba(231, 81, 43, 0.25);
 }
 
 @media (max-width: 500px) {
