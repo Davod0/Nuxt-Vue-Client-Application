@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nx build-static Nuxt-Vue-Client-Application",
+    "outputDirectory": "apps/Nuxt-Vue-Client-Application/.vercel/output/static",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "test": "jest"
