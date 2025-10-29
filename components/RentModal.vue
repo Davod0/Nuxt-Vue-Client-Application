@@ -9,6 +9,7 @@
     >
       Rent
     </b-button>
+
     <button class="button2" @click="goHome">Back to Home</button>
 
     <b-modal ref="my-modal" hide-footer title="Using Component Methods">
@@ -20,12 +21,19 @@
             <strong>Order</strong> to confirm your rental.
           </p>
         </div>
-        <vc-date-picker :value="null" color="indigo" is-dark is-range />
+        <vc-date-picker
+          v-model="selectedDates"
+          color="indigo"
+          is-dark
+          is-range
+        />
       </div>
 
       <div class="button-container">
         <button
           class="button"
+          :disabled="!selectedDates || !selectedDates.start || !selectedDates.end"
+          :class="{ 'button-disabled': !selectedDates || !selectedDates.start || !selectedDates.end }"
           @click="
             () => {
               addItem(product.id);
@@ -43,27 +51,29 @@
 
 <script>
 import { mapMutations } from "vuex";
+
 export default {
   props: ["product"],
   data() {
     return {
       isRented: false,
+      selectedDates: null,
     };
   },
   methods: {
     showModal() {
-      this.$refs['my-modal'].show();
+      this.$refs["my-modal"].show();
     },
     hideModal() {
-      this.$refs['my-modal'].hide();
+      this.$refs["my-modal"].hide();
     },
     toggleModal() {
-      this.$refs['my-modal'].toggle('#toggle-btn');
+      this.$refs["my-modal"].toggle("#toggle-btn");
     },
     goHome() {
-      this.$router.push('/');
+      this.$router.push("/");
     },
-    ...mapMutations(['addItem']),
+    ...mapMutations(["addItem"]),
   },
 };
 </script>
@@ -86,6 +96,13 @@ export default {
   width: 30rem;
   background-color: rgb(255, 95, 57);
   box-shadow: 0 4px 16px rgba(231, 81, 43, 0.25);
+}
+
+.button-disabled {
+  background-color: gray !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  opacity: 0.8;
 }
 
 .button-container {
