@@ -1,15 +1,14 @@
 <template>
   <div>
     <h3>Customer Views</h3>
-<div v-if="!loading">
-  <ReviewCard
-    v-for="review in reviewers.results"
-    :key="review.login.uuid"
-    :review="review"
-    :text="review.text"
-  />
-</div>
-<div v-else>Loading...</div>
+      <div v-if="!loading">
+        <ReviewCard
+          v-for="review in reviewers.results"
+          :key="review.login.uuid"
+          :review="review"
+          :text="review.text"
+        />
+      </div>
     <div v-else>Loading...</div>
   </div>
 </template>
