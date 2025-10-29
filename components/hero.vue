@@ -2,7 +2,7 @@
   <div class="Hero container">
     <div class="text-container">
       <h1 class="header">Find your Fire Extinguisher</h1>
-      <button class="button btn">Start Exploring</button>
+      <button class="button btn" @click="scrollDown">Start Exploring</button>
     </div>
     <img
       src="../assets/svg/fire-est.svg"
@@ -13,7 +13,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    scrollDown() {
+      window.scrollBy({
+        top: 550,
+        behavior: "smooth",
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -66,7 +75,9 @@ export default {};
 }
 
 .button:hover {
-  width: 21.5rem;
+  width: 23rem;
+  background-color: rgb(255, 95, 57);
+  box-shadow: 0 4px 16px rgba(231, 81, 43, 0.25);
 }
 
 @media (max-width: 500px) {
