@@ -6,8 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "outputDirectory": "apps/Nuxt-Vue-Client-Application/.vercel/output/static",
-    "start": "nuxt start",
     "generate": "nuxt generate",
+    "start": "nuxt start",
     "test": "jest"
   },
   "dependencies": {
