@@ -2,7 +2,7 @@ export default {
   target: 'static',
 
   head: {
-    title: 'Nuxt-Vue-Client-Application',
+    title: 'fire extinguisher',
     htmlAttrs: {
       lang: 'en'
     },
@@ -13,7 +13,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/fire-extinguisher.png' }
     ]
   },
 
